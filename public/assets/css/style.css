@@ -144,3 +144,18 @@ object-fit: cover;
     width: 100%;
     }
 }
+
+.nav-link {
+    color: black;
+}
+
+.nav-item>a:hover {
+    color: #2EB104;
+}
+
+/*code to change background color*/
+.navbar-nav>.active>a {
+    background-color: #C0C0C0;
+    color: #2EB104;
+    font-weight: bold;
+}
