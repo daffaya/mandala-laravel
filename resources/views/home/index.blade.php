@@ -254,7 +254,7 @@
       <div class="container-fluid">
         <div class="row py-3 px-5 text-center text-lg-start">
           <a href="/" class="fs-3 fw-light text-white mb-3 mb-lg-5 text-decoration-none">
-            <img src="assets/img/Logo.png" alt="" width="150px">
+            <img src="assets/img/Logo putih.png" alt="" width="150px">
           </a>
 
             {{-- Explore Section --}}
