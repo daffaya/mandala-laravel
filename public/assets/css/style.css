@@ -133,7 +133,7 @@ object-fit: cover;
 }
 
 .btn-submit {
-    background: #43a367;
+    background: #2EB104;
     color: white;
 }
 
@@ -168,8 +168,8 @@ object-fit: cover;
 .primary-button {
     padding: 0.65rem 1.35rem;
     color: white;
-    background: #43a367;
-    border: 2px solid #43a367;
+    background: #2EB104;
+    border: 2px solid #2EB104;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;

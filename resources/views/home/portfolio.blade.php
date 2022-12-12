@@ -82,22 +82,9 @@
 </nav>
 <!-- end navbar -->
 
-    <!-- breadcumbs  -->
-    <div class="breadcumbs py-2">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center text-white">
-                <h2>Portfolio</h2>
-                <ol class="d-flex list-unstyled">
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <!-- end breadcumbs -->
 
     <!-- teams -->
-    <div class="teams bg-light py-5">
+    <div class="teams bg-light mt-5 py-5">
         <div class="container">
             <div class="title-container">
                 <h2 class="text-center fw-bold">Portfolio</h2>
@@ -112,9 +99,6 @@
                     </ul>
                 </div>
             </div>
-            <p class="text-center mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem modi vero
-                voluptas ea molestias eum illo, ducimus eius quisquam repellendus accusamus rerum! Repeliendus enim
-                incidunt assumenda pariatur, quisquam evaniet numquam.</p>
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="mansory portfolio-container">

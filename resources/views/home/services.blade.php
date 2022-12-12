@@ -82,29 +82,12 @@
 </nav>
 <!-- end navbar -->
 
-    <!-- breadcumbs  -->
-    <div class="breadcumbs py-2">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center text-white">
-                <h2>Services</h2>
-                <ol class="d-flex list-unstyled">
-                    <li>Home</li>
-                    <li>Services</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    <!-- end breadcumbs -->
-
     <!-- services -->
-    <div class="services bg-light py-5">
+    <div class="services bg-light mt-5 py-5">
         <div class="container">
             <div class="title-container">
-                <h2 class="text-center fw-bold">SERVICES</h2>
+                <h2 class="text-center fw-bold">Lingkup Layanan</h2>
             </div>
-            <p class="text-center mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem modi vero
-                voluptas ea molestias eum illo, ducimus eius quisquam repellendus accusamus rerum! Repeliendus enim
-                incidunt assumenda pariatur, quisquam evaniet numquam.</p>
             <div class="row mt-5">
                 @foreach($services as $service)
                 <div class="col-md-4">

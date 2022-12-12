@@ -124,44 +124,18 @@
   <!-- about us -->
   <div class="about-us mt-5">
     <div class="container">
-      <div class="title-container text-center ">
-        <h2 class="fw-bold">ABOUT US</h2>
-      </div>
       <div class="row mt-5">
-        <div class="col-md-6" data-aos="fade-right">
+        <div class="col-12 col-lg-6 text-wrap text-center text-lg-start p-5" data-aos="fade-right">
           <h3 class="fw-bold about-us-title">
-            {{$about->judul}}
+            Siapa Kami?
           </h3>
-          <p class="fw-bolder mt-4 about-us-subtitle">
-            {{$about->subjudul}}
-          </p>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <p>
+          <p mt-5 fs-5>
+            <br>
             {{$about->deskripsi_1}}
           </p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <i class="fa fa-check-double primary"></i>
-              {{$about->kelebihan_1}}
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-check-double primary"></i>
-              {{$about->kelebihan_2}}
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-check-double primary"></i>
-              {{$about->kelebihan_3}}
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-check-double primary"></i>
-              {{$about->kelebihan_4}}
-            </li>
-          </ul>
-          <p class="mt-2">
-            {{$about->deskripsi_2}}
-          </p>
         </div>
+        <img class="img-fluid rounded float-end d-none d-lg-inline-flex col-12 col-lg-5 mt-1"
+        src="assets/img/Who We Are.jpg" alt="Siapa Kami?" width="10px">
       </div>
     </div>
   </div>
@@ -171,11 +145,10 @@
   <div class="services mt-5 bg-light py-5">
     <div class="container">
       <div class="title-container text-center">
-        <h2 class="fw-bold">SERVICES</h2>
+        <h2 class="fw-bold">Apa Yang Kami Kerjakan?</h2>
       </div>
       <p class="text-center mt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
-        aliquam.
+        Berikut adalah beberapa hal yang telah kami kerjakan :  
       </p>
       <div class="row mt-5">
         @foreach($services as $service)
@@ -198,58 +171,28 @@
   </div>
   <!-- end services -->
 
-  <!-- portfolio us -->
-  <div class="portfolio-us mt-5">
-    <div class="container">
-      <div class="title-container">
-        <h2 class="text-center fw-bold">PORTFOLIO</h2>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-12 d-flex justify-content-center">
-          <ul class="list-unstyled d-flex portfolio-filters">
-            <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
-            <li data-filter=".filter-web" class="py-2 px-4">Web</li>
-            <li data-filter=".filter-design" class="py-2 px-4">Design</li>
-            <li data-filter=".filter-photo" class="py-2 px-4">Photography</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-12">
-          <div class="mansory portfolio-container">
-            <div class="mansory-sizer"></div>
-            @foreach ($portfolios as $portfolio)
-            <div class="mansory-item m-2 portfolio-item filter-web">
-              <img src="image/{{$portfolio->image}}" alt="" class="img-fluid" />
-            </div>
-            @endforeach
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end portfolio us -->
 
-  <!-- clients -->
-  <div class="clients mt-5">
-    <div class="container">
-      <div class="title-container">
-        <h2 class="text-center fw-bold">CLIENTS</h2>
-      </div>
-      <div class="row mt-5">
-        @foreach($clients as $client)
-        <div class="col-md-3 pt-5 text-center" data-aos="zoom-in">
-          <img src="image/{{$client->image}}" class="img-fluid brand-image" alt="" />
-        </div>
-        @endforeach
-      </div>
+
+
+
+  {{-- Call to Action --}}
+  <div class="container-fluid"style="background-color: #182430">
+    <div class="d-flex justify-content-between align-items-center text-white py-3 px-5">
+      <h1 class="mt-5 mb-5 fs-4 fw-bold">
+        Tertarik untuk bekerja sama?
+      </h1>
+      <button>
+        <a href="https://api.whatsapp.com/send?phone=6282227059970" target="_blank" class="primary-button">
+          Hubungi Kami
+        </a>
+      </button>
     </div>
   </div>
-  <!-- end clients -->
+  {{-- End Call to Action --}}
 
   <!-- footer -->
-  <footer class="mt-5">
-    <div class="footer-top bg-dark text-white p-5 ">
+  <footer>
+    <div class="footer-top text-white p-5 " style="background-color: #101820">
       <div class="container-fluid">
         <div class="row py-3 px-5 text-center text-lg-start">
           <a href="/" class="fs-3 fw-light text-white mb-3 mb-lg-5 text-decoration-none">
@@ -369,13 +312,7 @@
                       You are an admin?
                     </span>
 
-                    <button class="btn-submit"
-                    style=
-                    "background: #2EB104;
-                    padding: 5px 16px;
-                    border-radius: 2px;
-                    font-size: 14px;
-                    font-weight: 600; ">
+                    <button class="btn-submit">
                       <a href="/login" class="primary-button">Login</a>
                     </button>
                   </div>
@@ -386,8 +323,9 @@
         </div>
       </div>
     </div>
+    
 
-    <div class="footer-down bg-darker text-white px-5 py-3">
+    <div class="footer-down text-white px-5 py-3" style="background-color: #101820">
         <div class="copyright">
           <h1 class="fs-6 fw-bold text-center text-soft-grey">
             Copyright © Mandala Projects
@@ -397,11 +335,11 @@
   </footer>
   <!-- end footer  -->
 
-  <!-- to top -->
+  <!-- Whatsapp -->
   <a href="https://api.whatsapp.com/send?phone=6282227059970" target="_blank" class="btn-to-top p-3" style="border-radius: 50%;">
     <img src="assets/img/wa.png" alt="Call Me" width="32px">
   </a>
-  <!-- end to top -->
+  <!-- Whatsapp -->
 
   <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
   <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

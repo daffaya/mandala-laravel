@@ -82,103 +82,37 @@
 </nav>
 <!-- end navbar -->
 
-  <!-- breadcumbs  -->
-  <div class="breadcumbs py-2">
+  <!-- about us -->
+  <div class="about-us mt-8">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center text-white">
-        <h2>About</h2>
-        <ol class="d-flex list-unstyled">
-          <li>Home</li>
-          <li>About</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-  <!-- end breadcumbs -->
-
-  <!-- about -->
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-6" data-aos="fade-right">
-        <h3 class="fw-bold about-us-title">
-          {{$about->judul}}
-        </h3>
-        <p class="fw-bolder mt-4 about-us-subtitle">
-          {{$about->subjudul}}
-        </p>
-      </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <p>
-          {{$about->deskripsi_1}}
-        </p>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <i class="fa fa-check-double primary"></i>
-            {{$about->kelebihan_1}}
-          </li>
-          <li class="list-group-item">
-            <i class="fa fa-check-double primary"></i>
-            {{$about->kelebihan_2}}
-          </li>
-          <li class="list-group-item">
-            <i class="fa fa-check-double primary"></i>
-            {{$about->kelebihan_3}}
-          </li>
-          <li class="list-group-item">
-            <i class="fa fa-check-double primary"></i>
-            {{$about->kelebihan_4}}
-          </li>
-        </ul>
-        <p class="mt-2">
-          {{$about->deskripsi_2}}
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- end about -->
-
-  <!-- teams -->
-  <div class="teams bg-light mt-5 py-5">
-    <div class="container">
-      <div class="title-container ">
-        <h2 class="text-center fw-bold ">OUR TEAM</h2>
-      </div>
-      <p class="text-center ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem modi vero voluptas ea
-        molestias eum illo, ducimus eius quisquam repellendus accusamus rerum! Repeliendus enim incidunt assumenda
-        pariatur, quisquam evaniet numquam.</p>
-      <div class="row">
-        @foreach ($teams as $team)
-        <div class="col-md-3" data-aos="fade-up">
-          <div class="card" style="width: 18rem;">
-            <img src="image/{{$team->image}}" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title text-bold">{{$team->title}}</h5>
-              <p class="card-text text-muted">{{$team->description}}</p>
-            </div>
-          </div>
-        </div>
-        @endforeach
-      </div>
-    </div>
-  </div>
-  <!-- end teams -->
-
-  <!-- clients -->
-  <div class="clients mt-5">
-    <div class="container">
-      <div class="title-container">
-        <h2 class="text-center fw-bold">CLIENTS</h2>
-      </div>
       <div class="row mt-5">
-        @foreach($clients as $client)
-        <div class="col-md-3 pt-5 text-center" data-aos="zoom-in">
-          <img src="image/{{$client->image}}" class="img-fluid brand-image" alt="" />
+        <div class="col-12 col-lg-6 text-wrap text-center text-lg-start p-5" data-aos="fade-right">
+          <h3 class="fw-bold about-us-title">
+            Siapa Kami?
+          </h3>
+          <p mt-5 fs-5>
+            <br>
+            {{$about->deskripsi_1}}
+          </p>
         </div>
-        @endforeach
+        <img class="img-fluid rounded float-end d-none d-lg-inline-flex col-12 col-lg-5 mt-1"
+        src="assets/img/Who We Are.jpg" alt="Siapa Kami?" width="10px">
       </div>
+      <div class="mapouter mt-8">
+        <div class="gmap_canvas">
+          <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=296&amp;hl=en&amp;q=CV Mandala Projects&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          </iframe>
+          <a href="https://formatjson.org/word-counter">Word Counter</a>
+        </div>
+        <style>.mapouter{position:relative;text-align:right;width:100%;height:296px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:296px;}.gmap_iframe {height:296px!important;}
+        </style>
+    </div>
+
     </div>
   </div>
-  <!-- end clients -->
+  <!-- end about us -->
+
+
 
   <!-- footer -->
   <footer class="mt-5">
