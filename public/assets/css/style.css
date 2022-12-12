@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
 .carousel-img {
     max-height: 100vh;
 }
 
 .carousel-caption {
-    border-top: 10px solid #07bf07;
+    border-top: 10px solid #2EB104;
     background-color: #00000094;
 }
 
@@ -12,11 +17,11 @@
 }
 
 .primary {
-   color: #07bf07; 
+   color: #2EB104; 
 }
 
 .active {
-    color: #07bf07 !important;
+    color: #2EB104 !important;
 }
 
 .title-container{
@@ -31,7 +36,7 @@
     display: black;
     width: 50px;
     height: 3px;
-    background-color: #07bf07;
+    background-color: #2EB104;
     bottom: 0;
     left: calc(50% - 25px);
     margin-bottom: 20px;
@@ -50,7 +55,7 @@
 }
 
 .card-icon:hover {
-    color: #07bf07;
+    color: #2EB104;
 }
 
 .mansory-sizer,
@@ -76,7 +81,7 @@ a {
 
 .btn-subscribe,
 .btn-to-top {
-    background: #07bf07;
+    background: #2EB104;
 }
 
 .btn-to-top {
@@ -97,7 +102,7 @@ a {
 
 .portfolio-filters .filter-active, 
 .breadcumbs {
- background: #07bf07;
+ background: #2EB104;
 }
 
 .breadcumbs {
@@ -128,7 +133,7 @@ object-fit: cover;
 }
 
 .btn-submit {
-    background: #07bf07;
+    background: #43a367;
     color: white;
 }
 
@@ -158,4 +163,23 @@ object-fit: cover;
     background-color: #C0C0C0;
     color: #2EB104;
     font-weight: bold;
+}
+
+.primary-button {
+    padding: 0.65rem 1.35rem;
+    color: white;
+    background: #43a367;
+    border: 2px solid #43a367;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600; 
+}
+
+/* .primary-button:hover {
+    color: #e8ffee; 
+} */
+
+.footer-bg {
+    background-color: #101820;
 }
