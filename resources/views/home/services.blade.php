@@ -253,11 +253,11 @@
   </footer>
   <!-- end footer  -->
 
-    <!-- to top -->
-    <a href="#" class="btn-to-top p-3">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-    <!-- end to top -->
+  <!-- Whatsapp -->
+  <a href="https://api.whatsapp.com/send?phone=6282227059970" target="_blank" class="btn-to-top p-3" style="border-radius: 50%;">
+    <img src="assets/img/wa.png" alt="Call Me" width="32px">
+  </a>
+  <!-- Whatsapp -->
 
     <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
