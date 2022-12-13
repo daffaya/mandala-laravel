@@ -236,14 +236,8 @@
                       You are an admin?
                     </span>
 
-                    <button class="btn-submit"
-                    style=
-                    "background: #2EB104;
-                    padding: 5px 16px;
-                    border-radius: 2px;
-                    font-size: 14px;
-                    font-weight: 600; ">
-                      <a href="/login" class="primary-button">Login</a>
+                    <button>
+                      <a href="/login" class="primary-button" target="_blank">Login</a>
                     </button>
                   </div>
                 </div>

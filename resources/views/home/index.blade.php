@@ -312,8 +312,8 @@
                       You are an admin?
                     </span>
 
-                    <button class="btn-submit">
-                      <a href="/login" class="primary-button">Login</a>
+                    <button>
+                      <a href="/login" class="primary-button" target="_blank">Login</a>
                     </button>
                   </div>
                 </div>
