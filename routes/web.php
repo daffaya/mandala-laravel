@@ -42,4 +42,5 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
 
     Route::get('about', [AboutController::class, 'index']);
     Route::put('about/{id}', [AboutController::class, 'update']);
+
 });

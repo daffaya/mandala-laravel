@@ -84,8 +84,8 @@
 
   <!-- about us -->
   <div class="about-us mt-8">
-    <div class="container">
-      <div class="row mt-5">
+    <div class="container-fluid">
+      <div class="row mt-5 ">
         <div class="col-12 col-lg-6 text-wrap text-center text-lg-start p-5" data-aos="fade-right">
           <h3 class="fw-bold about-us-title">
             Siapa Kami?
@@ -95,20 +95,116 @@
             {{$about->deskripsi_1}}
           </p>
         </div>
-        <img class="img-fluid rounded float-end d-none d-lg-inline-flex col-12 col-lg-5 mt-1"
-        src="assets/img/Who We Are.jpg" alt="Siapa Kami?" width="10px">
-      </div>
-      <div class="mapouter mt-8">
-        <div class="gmap_canvas">
-          <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=296&amp;hl=en&amp;q=CV Mandala Projects&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-          </iframe>
-          <a href="https://formatjson.org/word-counter">Word Counter</a>
-        </div>
-        <style>.mapouter{position:relative;text-align:right;width:100%;height:296px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:296px;}.gmap_iframe {height:296px!important;}
-        </style>
-    </div>
 
-    </div>
+        <div class="col-12 col-lg-6 text-wrap text-center text-lg-start p-5">
+          <img class="img-fluid rounded mx-auto d-block"
+          src="assets/img/Who We Are.jpg" alt="Siapa Kami?">
+        </div>
+      </div>
+
+      <div class="title-container mt-8">
+        <h2 class="text-center fw-bold">Contact Us</h2>
+      </div>
+
+
+      {{-- Send Email --}}
+      <div class="row px-5 row justify-content-between">
+        @if (count($errors) > 0)
+         <div class="alert alert-danger">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <ul>
+           @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+           @endforeach
+          </ul>
+         </div>
+        @endif
+        @if ($message = Session::get('success'))
+        <div class="alert alert-success alert-block">
+         <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>{{ $message }}</strong>
+        </div>
+        @endif
+
+          <div class="px-5 col-7 bg-primary">
+            <div class="col mt-4">
+              <form method="post" action="{{url('sendemail/send')}}">
+                {{ csrf_field() }}
+                <div class="form-group">
+                 <label>Enter Your Name</label>
+                 <input type="text" name="name" class="form-control" value="" />
+                </div>
+                <div class="form-group">
+                 <label>Enter Your Email</label>
+                 <input type="text" name="email" class="form-control" value="" />
+                </div>
+                <div class="form-group">
+                 <label>Enter Your Message</label>
+                 <textarea name="message" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                 <input type="submit" name="send" class="btn btn-info" value="Send" />
+                </div>
+               </form>
+            </div>
+          </div>
+
+          <div class="px-5 col-5 bg-dark text-white">
+            <div class="col mt-4 text-center">
+              <h1 class="fs-4 fw-bold text-white"> Contact Information</h1>
+            </div>
+
+            <div class="col mt-5 mb-5">
+              {{-- Contacts Section --}}
+              <div class="col-12 col-lg my-5 my-lg-0 text-white">
+                <div class="col">
+                    <div class="d-flex flex-row gap-3 justify-content-lg-start align-items-start">
+                      <img src="assets/img//Call.svg" alt="phone"/>
+                        <p class="fs-6">{{$contact->telepon}}</p>
+                    </div>
+                    
+                    <div class="d-flex flex-row gap-3 justify-content-lg-start align-items-start" >
+                      <img src="assets/img//Message.svg" alt="email"/>
+                        <p class="fs-6">{{$contact->email}}</p>
+                    </div>
+                    
+                    <div class="d-flex flex-row gap-3 justify-content-lg-start align-items-start">
+                      <img src="assets/img//Location.svg" alt="location"/>
+                        <p class="fs-6">
+                          {{$contact->alamat}}
+                              </p>
+                          </div>
+                    </div>
+                </div>
+              {{-- End Contact Sesion --}}
+            </div>
+          </div>
+      </div>
+
+      </div>
+
+      <div class="row mt-5 title-container">
+        <h2 class="text-center fw-bold">Our Location</h2>
+      </div>
+
+      
+      <div class="row">
+        <div class="card mx-auto align-items-center mb-5" style="width: 40rem;">
+          <div class="mapouter mt-8">
+            <div class="gmap_canvas">
+              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=296&amp;hl=en&amp;q=CV Mandala Projects&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+              </iframe>
+              <a href="https://formatjson.org/word-counter">Word Counter</a>
+            </div>
+            <style>.mapouter{position:relative;text-align:right;width:100%;height:296px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:296px;}.gmap_iframe {height:296px!important;}
+            </style>
+          </div>
+            <div class="card-footer text-muted text-center fw-bold">
+              Kulon Progo, Yogyakarta
+            </div>
+          </div>
+      </div>
+      
   </div>
   <!-- end about us -->
 
@@ -214,6 +310,9 @@
                   </div>
           </div>
 
+          {{-- End Contact Sesion --}}
+          
+          
           <div class="col-12 col-lg my-5 my-lg-0 text-white">
 
             <ul class="list-group list-unstyled">
