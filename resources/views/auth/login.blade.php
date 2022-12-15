@@ -17,7 +17,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <!-- /.login-logo -->
-  <div class="card card-outline card-primary">
+  <div class="card card-outline">
     <div class="card-header text-center">
       <a href="/lte/index2.html" class="h1"><b>Login</b></a>
     </div>
@@ -58,7 +58,7 @@
         <div class="row">
           <!-- /.col -->
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn text-white text-bold btn-block" style="background-color: #2EB104">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
