@@ -34,8 +34,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/admin/dashboard" class="brand-link">
-      <img src="/lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Company Profile</span>
+      <img src="/lte/dist/img/Logo Putih.png" alt="AdminLTE Logo" class="img-fluid mx-auto d-block" style="opacity: .8; width:180px">
+      <span class="brand-text font-weight-light"></span>
     </a>
 
     <!-- Sidebar -->
@@ -90,30 +90,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Data Services</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="/admin/testimonials" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Testimonials</p>
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a href="/admin/portfolios" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Portfolios</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="/admin/clients" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Clients</p>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> --}}
+              {{-- <li class="nav-item">
                 <a href="/admin/teams" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Teams</p>
                 </a>
-              </li>
+              </li> --}}
             </ul>
           </li>
           <li class="nav-item">
