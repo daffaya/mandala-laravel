@@ -202,11 +202,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
+    {{-- <div class="float-right d-none d-sm-inline">
       Anything you want
-    </div>
+    </div> --}}
     <!-- Default to the left -->
-    <strong>Copyright &copy; {{ date('Y') }} <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; {{ date('Y') }} <a href="https://mandalaprojects.co.id" style="color: #2EB104">Mandala Projects</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
