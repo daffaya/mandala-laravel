@@ -126,7 +126,7 @@
         </div>
         @endif
 
-          <div class="px-5 col-7 bg-primary">
+          <div class="px-5 col-7 border border-1 border-dark">
             <div class="col mt-4">
               <form method="post" action="{{url('sendemail/send')}}">
                 {{ csrf_field() }}
@@ -143,7 +143,7 @@
                  <textarea name="message" class="form-control"></textarea>
                 </div>
                 <div class="form-group">
-                 <input type="submit" name="send" class="btn btn-info" value="Send" />
+                 <input type="submit" name="send" class="btn btn-submit" value="Send"/>
                 </div>
                </form>
             </div>

@@ -99,19 +99,37 @@
                     </ul>
                 </div>
             </div>
+
+            
             <div class="row mt-5">
-                <div class="col-md-12">
-                    <div class="mansory portfolio-container">
-                        <div class="mansory-sizer"></div>
-                          @foreach ($portfolio as $portfolio)
-                        <div class="mansory-item m-2 portfolio-item filter-web">
-                          <img src="image/{{$portfolio->image}}" alt="" class="img-fluid" />
-                        </div>
-                        @endforeach
-                      </div>
+              @foreach ($portfolio as $portfolio)
+              <div class="col-md-4">
+                <div class="card border-0 text-center p-4 mt-3" style="width: 350px; height: 350px" data-aos="zoom-in">
+                  <div class="card-body">
+                    <div class="card-icon">
+                      <img src="image/{{$portfolio->image}}" alt="" class="mx-auto d-block" width="200px" style="max-height: 148px; max-width: 300px" />
+                    </div>  
+
+                    <div class="card-title fw-bolder mt-4 text-sm-start">
+                        {{$portfolio->title}}
+                    </div>
+
+                    <div class="card-description mt-3">                 
+                      <p class="text-sm-start">
+                          {{$portfolio->description}}
+                      </p>
+                    </div>
+
                   </div>
+                  
+                </div>
               </div>
-        </div>
+              @endforeach
+            </div>
+
+            <div class="row mt-5 bg-red">
+              <p> a </p>
+            </div>
     </div>
     <!-- end teams -->
 
