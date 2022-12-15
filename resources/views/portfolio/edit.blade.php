@@ -19,8 +19,8 @@
                 <small style="color:red">{{$message}}</small>
                 @enderror
                 <div class="form-group">
-                    <label for="">Deskripsi</label>
-                    <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi">{{ $portfolio->description }}</textarea>
+                    <label for="">Pemrakarsa</label>
+                    <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Pemrakarsa">{{ $portfolio->description }}</textarea>
                 </div>
                 @error('description')
                 <small style="color:red">{{$message}}</small>

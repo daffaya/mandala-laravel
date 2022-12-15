@@ -20,7 +20,7 @@
                 <tr>
                     <th>No</th>
                     <th>Judul</th>
-                    <th>Deskripsi</th>
+                    <th>Pemrakarsa</th>
                     <th>Gambar</th>
                     <th>Aksi</th>
                 </tr>
