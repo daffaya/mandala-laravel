@@ -23,13 +23,13 @@
                 @error('judul')
                 <small style="color:red">{{$message}}</small>
                 @enderror
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="">Subjudul</label>
                     <textarea name="subjudul" id="" cols="30" rows="5" class="form-control" placeholder="Subjudul">{{ $about->subjudul }}</textarea>
                 </div>
                 @error('subjudul')
                 <small style="color:red">{{$message}}</small>
-                @enderror
+                @enderror --}}
                 <div class="form-group">
                     <label for="">Deskripsi 1</label>
                     <textarea name="deskripsi_1" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi 1">{{ $about->deskripsi_1 }}</textarea>
@@ -37,7 +37,7 @@
                 @error('deskripsi_1')
                 <small style="color:red">{{$message}}</small>
                 @enderror
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="">Deskripsi 2</label>
                     <textarea name="deskripsi_2" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi 2">{{ $about->deskripsi_2 }}</textarea>
                 </div>
@@ -71,9 +71,9 @@
                 </div>
                 @error('kelebihan_4')
                 <small style="color:red">{{$message}}</small>
-                @enderror
+                @enderror --}}
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn btn-block text-white text-bold" style="background-color: #2EB104">Submit</button>
                 </div>
             </form>
         </div>
