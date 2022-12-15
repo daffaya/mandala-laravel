@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/admin/portfolios" class="btn btn-primary mb-1">Kembali</a>
+    <a href="/admin/portfolios" class="btn text-white text-bold mb-1" style="background-color: #2EB104">Kembali</a>
     <div class="row">
         <div class="col-md-12">
             <form action="{{ route('portfolios.update', $portfolio->id) }}" method="POST" enctype="multipart/form-data">
@@ -34,7 +34,7 @@
                 <small style="color:red">{{$message}}</small>
                 @enderror
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn text-white text-bold btn-block" style="background-color: #2EB104">Submit</button>
                 </div>
             </form>
         </div>
