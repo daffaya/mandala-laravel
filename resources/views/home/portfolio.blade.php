@@ -89,7 +89,7 @@
             <div class="title-container">
                 <h2 class="text-center fw-bold">Portfolio</h2>
             </div>
-            <div class="row mt-4">
+            {{-- <div class="row mt-4">
                 <div class="col-md-12 d-flex justify-content-center">
                     <ul class="list-unstyled d-flex portfolio-filters">
                         <li data-filter="*" class="py-2 px-4 filter-active text-white">ALL</li>
@@ -98,7 +98,7 @@
                         <li data-filter=".filter-photo" class="py-2 px-4">Perancangan</li>
                     </ul>
                 </div>
-            </div>
+            </div> --}}
 
             
             <div class="row mt-5">
