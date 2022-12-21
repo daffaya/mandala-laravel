@@ -131,8 +131,8 @@
     <!-- end teams -->
 
   <!-- footer -->
-  <footer class="mt-5">
-    <div class="footer-top bg-dark text-white p-5 ">
+  <footer>
+    <div class="footer-top text-white p-5 " style="background-color: #101820">
       <div class="container-fluid">
         <div class="row py-3 px-5 text-center text-lg-start">
           <a href="/" class="fs-3 fw-light text-white mb-3 mb-lg-5 text-decoration-none">
@@ -170,7 +170,7 @@
               
           {{-- Lingkup Layanan Section --}}
           <div class="col-4 my-5 my-lg-0 text-white">
-            <h4 class="fs-4 fw-boldtext-white">Lingkup Layanan</h2>
+            <h4 a href="/layanan" class="fs-4 fw-boldtext-white">Lingkup Layanan</h2>
               <ul class="list-group list-unstyled">
                 @foreach($services as $service)
                 <li class="list-item">
@@ -263,8 +263,9 @@
         </div>
       </div>
     </div>
+    
 
-    <div class="footer-down bg-darker text-white px-5 py-3">
+    <div class="footer-down text-white px-5 py-3" style="background-color: #101820">
         <div class="copyright">
           <h1 class="fs-6 fw-bold text-center text-soft-grey">
             Copyright © Mandala Projects

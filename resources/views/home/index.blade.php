@@ -230,7 +230,7 @@
               
           {{-- Lingkup Layanan Section --}}
           <div class="col-4 my-5 my-lg-0 text-white">
-            <h4 class="fs-4 fw-boldtext-white">Lingkup Layanan</h2>
+            <h4 a href="/layanan" class="fs-4 fw-boldtext-white">Lingkup Layanan</h2>
               <ul class="list-group list-unstyled">
                 @foreach($services as $service)
                 <li class="list-item">
