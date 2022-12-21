@@ -127,9 +127,6 @@
               @endforeach
             </div>
 
-            <div class="row mt-5 bg-red">
-              <p> a </p>
-            </div>
     </div>
     <!-- end teams -->
 
