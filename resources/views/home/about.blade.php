@@ -130,19 +130,19 @@
             <div class="col mt-4">
               <form method="post" action="{{url('sendemail/send')}}">
                 {{ csrf_field() }}
-                <div class="form-group">
+                <div class="form-group mt-2">
                  <label>Enter Your Name</label>
                  <input type="text" name="name" class="form-control" value="" />
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                  <label>Enter Your Email</label>
                  <input type="text" name="email" class="form-control" value="" />
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                  <label>Enter Your Message</label>
                  <textarea name="message" class="form-control"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-3 mb-3">
                  <input type="submit" name="send" class="btn btn-submit" value="Send"/>
                 </div>
                </form>
