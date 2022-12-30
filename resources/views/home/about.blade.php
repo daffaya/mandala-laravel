@@ -355,15 +355,6 @@
 </footer>
 <!-- end footer  -->
 
-    <div class="footer-down bg-darker text-white px-5 py-3">
-        <div class="copyright">
-          <h1 class="fs-6 fw-bold text-center text-soft-grey">
-            Copyright © Mandala Projects
-          </h1>
-        </div>
-    </div>
-  </footer>
-  <!-- end footer  -->
 
   <!-- Whatsapp -->
   <a href="https://api.whatsapp.com/send?phone=6282227059970" target="_blank" class="btn-to-top p-3" style="border-radius: 50%;">
