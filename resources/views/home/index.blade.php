@@ -134,8 +134,10 @@
             {{$about->deskripsi_1}}
           </p>
         </div>
-        <img class="img-fluid rounded float-end d-none d-lg-inline-flex col-12 col-lg-5 mt-1"
-        src="assets/img/Who We Are.jpg" alt="Siapa Kami?" width="10px">
+        <div class="col-12 col-lg-6 text-wrap text-center text-lg-start p-5 my-auto" >
+          <img class="img-fluid rounded mx-auto d-block"
+          src="assets/img/Logo.png" alt="Siapa Kami?" width="800px" >
+        </div>
       </div>
     </div>
   </div>
