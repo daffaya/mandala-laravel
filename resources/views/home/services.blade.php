@@ -94,10 +94,10 @@
                 <div class="card border-0 text-center p-4 mt-3" data-aos="zoom-in">
                     <div class="card-body">
                     <div class="card-icon">
-                        <img src="image/{{$service->image}}" alt="" class="img-fluid" width="80">
+                        <img src="image/{{$service->image}}" alt="" class="img-fluid"  style="max-height: 148px; max-width: 300px" width="200px">
                     </div>
                     <div class="card-title fw-bolder mt-4">{{$service->title}}</div>
-                    <p class="card-description mt-3">
+                    <p class="card-description mt-3 " style="text-align : left">
                         {{$service->description}}
                     </p>
                     </div>
