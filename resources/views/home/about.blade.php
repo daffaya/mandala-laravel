@@ -96,9 +96,9 @@
           </p>
         </div>
 
-        <div class="col-12 col-lg-6 text-wrap text-center text-lg-start p-5">
-          <img class="img-fluid rounded mx-auto d-block"
-          src="assets/img/Who We Are.jpg" alt="Siapa Kami?">
+        <div class="col-12 col-lg-6 text-wrap text-center text-lg-start p-5 my-auto">
+          <img class="img-fluid rounded mx-auto d-block justify-content-center"
+          src="assets/img/Logo.png" alt="Siapa Kami?" width="800px">
         </div>
       </div>
 
